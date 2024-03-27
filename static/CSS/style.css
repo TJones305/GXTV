@@ -1,0 +1,261 @@
+/*
+font-family: 'Bricolage Grotesque', sans-serif; -- headings
+font-family: 'Onest', sans-serif; -- body
+font-family: 'Young Serif', serif;-- h1
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@12..96&family=Onest&family=Young+Serif&display=swap');
+
+html{
+    margin:0%;
+    padding: 0%;
+}
+body{
+    background: url(/static/media/GXTV.png);
+    color: rgb(3, 3, 81);
+    font-family: 'Onest', sans-serif;
+    overflow-x: hidden;
+}
+
+.shadow{
+    background-color: rgba(0, 0, 0, 0.868);
+    position: absolute;
+    z-index: -1;
+    left:0;
+    right:0;
+}
+
+header{
+    background-color: rgb(3, 3, 81);
+    color:rgb(242, 242, 250);
+    display:flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-around;
+    width:100%;
+    padding-left: 5%;
+}
+
+nav{
+    width:15%;
+}
+
+a{
+    color:rgb(220, 220, 245);
+    margin:2% 1%;
+}
+
+a:hover{
+    color:rgb(32, 12, 73);
+    background-color: rgb(134, 134, 248);
+    margin:2% 1%;
+    border-radius: 5%;
+}
+
+img{
+    border-radius: 5%;
+}
+
+header img{
+    width: 100px;
+    height:100px;
+    margin-top: 1%;
+}
+
+#head-logo{
+    border-radius: 50%;
+}
+
+h1{
+    width:40%;
+    text-align: center;
+    font-family: 'Young Serif', serif;
+    font-size: 50px;
+}
+
+.heading{
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+
+#intro{
+    background:radial-gradient(circle closest-corner at 50% 50%, rgba(235, 235, 129, 0.95) 60%, rgba(250, 245, 245, 0.652) 50%), 
+    url("/static/media/GXTV.png") repeat;
+    text-align: center;
+    width:60%;
+    margin-left:20%;
+    border-radius: 15%;
+}
+
+#intro h3{
+    padding: 0% 30% 1%;
+}
+
+#intro p{
+    padding: 0% 30% 1%;
+}
+
+#intro a{
+    color:rgb(2, 6, 61);
+    font-weight: 700;
+    padding: 1%;
+    margin: 0%;
+    display:inline;
+    width:10%;
+}
+
+input[type=button]{
+    display:inline;
+    width:15%;
+    margin:0.5% 1%;
+    background-color: rgb(3, 3, 53);
+    color:rgb(243, 235, 223);
+    border-radius: 5%;
+}
+
+input[type=button]:hover{
+    display:inline;
+    width:15%;
+    margin:0.5% 1%;
+    background-color: rgb(3, 3, 53);
+    color:rgb(243, 235, 223);
+    border-radius: 5%;
+
+}
+
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 1% 0%;
+}
+
+.flex-item{
+    background-color: deepskyblue;
+    margin:1% 5%;
+    width:300px;
+    height: 300px;
+    border-radius: 5%;;
+}
+
+.flex-item img{
+    width:70%;
+    margin: 0% 15%;
+}
+
+.flex-item h2{
+    text-align: center;
+}
+
+#contact-form{
+    color: aliceblue;
+    background-color: rgb(2, 6, 61);
+    width:50%;
+    margin-left:20.5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 5%;
+    padding: 5%;
+}
+
+#contact-form h3{
+    text-align: center;
+    text-decoration:underline rgb(21, 225, 21);
+}
+
+input{
+    display:block;
+    margin-left: 25%;
+    width:50%;
+    margin-top: 1%;
+
+}
+
+input:hover{
+    background-color: rgb(227, 227, 226);
+}
+
+textarea{
+    display:block;
+    margin-left: 25%;
+    width:50%;
+    margin-top: 1%;
+}
+
+textarea:hover{
+    background-color: rgb(227, 227, 226);
+}
+
+label{
+    display:block;
+    margin-left: 25%;
+    margin-top: 1%;
+}
+
+input[type=submit]{
+    margin-top:2%;
+    margin-left: 35%;
+    width:30%;
+    border-radius: 10%;
+    background-color: rgb(27, 173, 27);
+    color:azure;
+    font-weight: 700;
+}
+
+input[type=submit]:hover{
+    background-color: rgb(28, 180, 28);
+    color:rgb(9, 56, 9);
+    font-weight: 700;
+}
+
+#form_reply{
+    display:none;
+}
+
+footer{
+    background-color: rgb(3, 3, 81);
+    color:rgb(220, 220, 245);
+    display:flex;
+    justify-content: space-around;
+    width:100%;
+}
+
+footer li{
+    list-style-type: none;
+}
+
+footer li:hover{
+    color:rgb(101, 121, 3);
+}
+
+footer h4{
+    text-align: center;
+}
+
+#player{
+margin-left: 37%;
+}
+
+
+/* ---- Error pages styling ---*/
+#e{
+   background:radial-gradient(circle closest-corner at 50% 50%, rgba(235, 235, 129, 0.95) 60%, rgba(250, 245, 245, 0.652) 50%), 
+   url("/static/media/GXTV.png") repeat;
+   text-align: center;
+   width:60%;
+   margin:10% 0% 9.7% 20%;
+   border-radius: 5%;
+
+}
+
+#e a{
+    color:darkblue;
+    margin:0%;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.error{
+    margin-left: 30%;
+}

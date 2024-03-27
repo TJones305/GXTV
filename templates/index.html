@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'CSS/style.css') }}">
+    <link rel="x-icon" href="{{ url_for('static', filename= 'media/favicon.ico') }}" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="/static/CSS/style.css">-->
+    <title>GXTV</title>
+</head>
+<body>
+    <div class="shadow">
+    <header>
+        <img id="head-logo" src="{{ url_for('static', filename= 'media/favicon.ico') }}" alt="GXTV logo">
+        <h1>GXTV</h1>
+        <nav>
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="url_for('videos.html')" >All Videos</a>
+            {% if session.user == "admin" %}
+            <a href="url_for('manage.html')">Manage Site</a>
+            {% else %}
+            <a href="url_for('admin.html')">Admin</a>
+            {% endif %}
+        </nav>
+    </header>
+    {% block content %}
+    <!--
+    <main class="flex">
+            <!-- Loads latest videos total of 8
+            <div class="flex-item">
+                <h2>TITLE</h2>
+                <img src="{{ url_for('static', filename= 'media/GXTV.png') }}" alt="GXTV logo">
+            </div>
+
+            <div class="flex-item">
+                <h2>TITLE</h2>
+                <img src="{{ url_for('static', filename= 'media/GXTV.png') }}" alt="GXTV logo">
+            </div>
+
+            <div class="flex-item">
+                <h2>TITLE</h2>
+                <img src="{{ url_for('static', filename= 'media/GXTV.png') }}" alt="GXTV logo">
+            </div>
+
+            <div class="flex-item">
+                <h2>TITLE</h2>
+                <img src="{{ url_for('static', filename= 'media/GXTV.png') }}" alt="GXTV logo">
+            </div>
+            <div class="flex-item">
+                <h2>TITLE</h2>
+                <img src="{{ url_for('static', filename= 'media/GXTV.png') }}" alt="GXTV logo">
+            </div>
+
+            <div class="flex-item">
+                <h2>TITLE</h2>
+                <img src="{{ url_for('static', filename= 'media/GXTV.png') }}" alt="GXTV logo">
+            </div>
+
+            <div class="flex-item">
+                <h2>TITLE</h2>
+                <img src="{{ url_for('static', filename= 'media/GXTV.png') }}" alt="GXTV logo">
+            </div>
+
+            <div class="flex-item">
+                <h2>TITLE</h2>
+                <img src="{{ url_for('static', filename= 'media/GXTV.png') }}" alt="GXTV logo">
+            </div>
+    </main>
+
+    <div id="player"></div>-->
+    <div id="intro">
+        <h2>Welcome to GXTV</h2>
+        <h3>
+            <em>"Our aim is to raise the profile of bowls 
+            and make it accessible to a wider audience"</em>
+        </h3>
+        <p>The website is self run and currently has areas under development, 
+            but please make use of the contact form below to email us about news 
+            or ideas you would like us to share or explore. <br> We hope to bring you 
+            videos and live streaming through the site in due course, but for now 
+            please visit our YouTube channel to access this content @ 
+            <a href="https://www.youtube.com/@GXTV2024" target="_blank">
+                <input type="button" value="GXTV">
+            </a>
+        </p>
+    </div>
+
+    <form id="contact-form">
+        <h3>Send us your suggestions</h3>
+        <input type="hidden" name="contact_number" value="697483">
+        <label>Name:</label>
+        <input type="text" name="user_name" id="user_name">
+        <label>Email:</label>
+        <input type="email" name="user_email" name="user_email">
+        <label>Message:</label>
+        <textarea name="message" id="message"></textarea>
+        <input type="submit" value="Send">
+    </form>
+
+    <div id="form_reply">
+        Thanks for submitting 
+    </div>
+
+    {% endblock %}
+    <footer>
+        <div>
+            <h4 class="heading">National</h4>
+            <ul>
+                <li><a href="https://www.bowlsengland.com/">Bowls England Main</a></li>
+                <li><a href="https://www.bowlsenglandcomps.com/season/5/1">Bowls England Comps</a></li>
+
+            </ul>
+        </div>
+        <div>
+            <h4 class="heading">Regional</h4>
+            <ul>
+                <li><a href="https://www.lscbowlers.co.uk/">London & Southern Counties</a></li>
+                <li><a href="https://www.wanddba.co.uk/">Watford & District</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="heading">County</h4>
+            <ul>
+                <li><a href="https://www.buckinghamshirebowls.co.uk/">Buckinghamshire B.A.</a></li>
+            </ul>
+        </div>
+        <div>
+            <p class="heading">&#169;
+                TJWD</p>
+        </div>
+    </footer>
+</div>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="{{ url_for('static', filename= 'JS/script.js') }}"></script>
+</body>
+</html>

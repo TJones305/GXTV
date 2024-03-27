@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+{% block content %}
+<section id="e">
+    <h1 class="error">GXTV</h1>
+    <h3>PAGE NOT FOUND!</h3>
+    <h4>Oh No! Looks like there is a problem with finding this page!</h4>
+    <h4>Please check that you have entered the correct web address,
+         if it is correct we are probably maintaining the page and it will be
+         back soon.
+    </h4>
+    <p>Return <a href="{{ url_for('index') }}">Home</a></p>
+</section>
+{% endblock %}
