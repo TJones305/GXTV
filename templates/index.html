@@ -25,50 +25,7 @@
         </nav>
     </header>
     {% block content %}
-    <!--
-    <main class="flex">
-            <!-- Loads latest videos total of 8
-            <div class="flex-item">
-                <h2>TITLE</h2>
-                <img src="{{ url_for('static', filename= 'media/GXTV.png') }}" alt="GXTV logo">
-            </div>
 
-            <div class="flex-item">
-                <h2>TITLE</h2>
-                <img src="{{ url_for('static', filename= 'media/GXTV.png') }}" alt="GXTV logo">
-            </div>
-
-            <div class="flex-item">
-                <h2>TITLE</h2>
-                <img src="{{ url_for('static', filename= 'media/GXTV.png') }}" alt="GXTV logo">
-            </div>
-
-            <div class="flex-item">
-                <h2>TITLE</h2>
-                <img src="{{ url_for('static', filename= 'media/GXTV.png') }}" alt="GXTV logo">
-            </div>
-            <div class="flex-item">
-                <h2>TITLE</h2>
-                <img src="{{ url_for('static', filename= 'media/GXTV.png') }}" alt="GXTV logo">
-            </div>
-
-            <div class="flex-item">
-                <h2>TITLE</h2>
-                <img src="{{ url_for('static', filename= 'media/GXTV.png') }}" alt="GXTV logo">
-            </div>
-
-            <div class="flex-item">
-                <h2>TITLE</h2>
-                <img src="{{ url_for('static', filename= 'media/GXTV.png') }}" alt="GXTV logo">
-            </div>
-
-            <div class="flex-item">
-                <h2>TITLE</h2>
-                <img src="{{ url_for('static', filename= 'media/GXTV.png') }}" alt="GXTV logo">
-            </div>
-    </main>
-
-    <div id="player"></div>-->
     <div id="intro">
         <h2>Welcome to GXTV</h2>
         <h3>
@@ -86,6 +43,8 @@
         </p>
     </div>
 
+    <div id="player"></div>
+
     <form id="contact-form">
         <h3>Send us your suggestions</h3>
         <input type="hidden" name="contact_number" value="697483">
@@ -99,7 +58,9 @@
     </form>
 
     <div id="form_reply">
-        Thanks for submitting 
+        <p>Thanks for sharing your thoughts with us!</p>
+        <img src="{{ url_for('static', filename= 'media/favicon.ico') }}" alt="GXTV Logo">
+        <button id="reset" type="button"><a href="{{ url_for('index') }}">Send Another</a></button>
     </div>
 
     {% endblock %}

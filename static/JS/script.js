@@ -106,9 +106,29 @@ window.onload = function() {
               // name.value =" ";
               // email.value =" ";
               // message.value=" ";
+              document.getElementById("contact-form").style.display = "none";
+              document.getElementById("form_reply").style.display = "block"
           }, function(error) {
               console.log('FAILED...', error);
           });
           //window.location.replace("{{ url_for('index') }}");
   });
+  
 }
+
+let formBtn = document.getElementById("reset");
+let formBtnLink = document.querySelector("#reset>a");
+
+formBtn.addEventListener('mouseover', function run(){
+  formBtn.style.backgroundColor = "rgb(4, 10, 94)";
+  formBtnLink.style.color = "aliceblue";
+  formBtnLink.style.backgroundColor = "rgb(4, 10, 94)";
+  formBtnLink.style.textDecoration ="none";
+})
+
+formBtn.addEventListener('mouseout', function run(){
+  formBtn.style.backgroundColor = "aliceblue";
+  formBtnLink.style.color = "rgb(4, 10, 94)";
+  formBtnLink.style.backgroundColor = "aliceblue";
+  formBtnLink.style.textDecoration ="none";
+})
