@@ -39,6 +39,7 @@ header{
 
 nav{
     width:15%;
+    padding-top: 4%;
 }
 
 a{
@@ -281,4 +282,54 @@ margin-left: 37%;
 
 .error{
     margin-left: 30%;
+}
+
+/* ---- Media Queries styling ---*/
+/* ---- Small Screens and Laptops ---*/
+@media(min-width:768px) and (max-width:1024px) {
+#mob-flex{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}    
+header{
+    padding-left: 2%;
+    justify-content: center;
+    width:99%;
+}
+
+nav{
+    margin-top: 1.5%;
+}
+
+a{
+    display:block;
+    text-align: center;
+    margin-top: 7.5%;
+}
+
+a:hover{
+    display:block;
+    text-align: center;
+    margin-top: 7.5%;
+}
+
+#intro{
+    width:75%;
+    margin-left:12.5%;
+}
+
+#contact-form{
+    width:65%;
+    margin-left: 12.5%;
+}
+
+input[type=button]{
+    width:20%;
+}
+
+input[type=button]:hover{
+    width:20%;
+}
+
 }

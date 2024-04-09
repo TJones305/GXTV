@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename= 'CSS/style.css') }}">
-    <link rel="x-icon" href="{{ url_for('static', filename= 'media/favicon.ico') }}" type="image/x-icon">
+    <link rel="shortcut icon" type="image/jpg" href="{{ url_for('static', filename= 'media/gxtv.ico') }}"/>
     <!-- <link rel="stylesheet" href="/static/CSS/style.css">-->
     <title>GXTV</title>
 </head>
 <body>
     <div class="shadow">
+    <div id="mob-flex">   
     <header>
-        <img id="head-logo" src="{{ url_for('static', filename= 'media/favicon.ico') }}" alt="GXTV logo">
+        <img id="head-logo" src="{{ url_for('static', filename= 'media/gxtv.ico') }}" alt="GXTV logo">
         <h1>GXTV</h1>
         <nav>
             <a href="{{ url_for('index') }}">Home</a>
@@ -91,6 +92,7 @@
                 TJWD</p>
         </div>
     </footer>
+</div> 
 </div>
     <script src="https://apis.google.com/js/api.js"></script>
     <script src="{{ url_for('static', filename= 'JS/script.js') }}"></script>
