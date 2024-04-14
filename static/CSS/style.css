@@ -333,3 +333,147 @@ input[type=button]:hover{
 }
 
 }
+
+@media(min-width:481px) and (max-width:768px) {
+    #mob-flex{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }    
+    header{
+        padding: 0% 1%;
+        justify-content: space-evenly;
+        width:99%;
+    }
+    
+    nav{
+        margin-top: 1.5%;
+    }
+    
+    a{
+        display:block;
+        text-align: center;
+        margin-top: 7.5%;
+    }
+    
+    a:hover{
+        display:block;
+        text-align: center;
+        margin-top: 7.5%;
+    }
+    
+    #intro{
+        width:90%;
+        margin-left:5%;
+        background:radial-gradient(circle closest-corner at 50% 50%, rgba(235, 235, 129, 0.95) 75%, rgba(250, 245, 245, 0.652) 50%), 
+        url("/static/media/GXTV.png") repeat;
+    }
+
+    #intro h2{
+        margin-top: 10%;
+    }
+
+    #intro h3{
+        padding:7.5%;
+        margin: 0%;
+    }
+
+    #intro p{
+        padding: 0% 12%;
+    }
+    
+    #contact-form{
+        width:65%;
+        margin-left: 12.5%;
+    }
+    
+    input[type=button]{
+        width:20%;
+    }
+    
+    input[type=button]:hover{
+        width:20%;
+    }
+
+    footer li{
+        margin: 5% 0%;
+    }
+
+    footer a{
+        margin: 5% 0%;
+    }
+
+
+}
+
+@media(min-width:320px) and (max-width:480px) {
+
+    #mob-flex{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }    
+    header{
+        padding: 0% 1%;
+        justify-content: space-evenly;
+        width:99%;
+    }
+    
+    nav{
+        margin-top: 1.5%;
+    }
+    
+    a{
+        display:block;
+        text-align: center;
+        margin-top: 7.5%;
+    }
+    
+    a:hover{
+        display:block;
+        text-align: center;
+        margin-top: 7.5%;
+    }
+    
+    #intro{
+        width:90%;
+        margin-left:5%;
+        background:radial-gradient(circle closest-corner at 50% 50%, rgba(235, 235, 129, 0.95) 75%, rgba(250, 245, 245, 0.652) 50%), 
+        url("/static/media/GXTV.png") repeat;
+    }
+
+    #intro h2{
+        margin-top: 10%;
+    }
+
+    #intro h3{
+        padding:7.5%;
+        margin: 0%;
+    }
+
+    #intro p{
+        padding:7.5%;
+    }
+    
+    #contact-form{
+        width:65%;
+        margin-left: 12.5%;
+    }
+    
+    input[type=button]{
+        width:20%;
+    }
+    
+    input[type=button]:hover{
+        width:20%;
+    }
+
+    footer li{
+        margin: 5% 0%;
+    }
+
+    footer a{
+        margin: 5% 0%;
+    }
+
+}
