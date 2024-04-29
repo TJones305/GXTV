@@ -17,8 +17,8 @@
         <h1>GXTV</h1>
         <nav>
             <a href="{{ url_for('index') }}">Home</a>
-            <a href="url_for('videos.html')" >All Videos</a>
             {% if session.user == "admin" %}
+            <a href="url_for('videos.html')" >All Videos</a>
             <a href="url_for('manage.html')">Manage Site</a>
             {% else %}
             <a href="url_for('admin.html')">Admin</a>
