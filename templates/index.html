@@ -44,8 +44,10 @@
         </p>
     </div>
 
+    <section>
     <div id="player"></div>
-
+    </section>
+    
     <form id="contact-form">
         <h3>Send us your suggestions</h3>
         <input type="hidden" name="contact_number" value="697483">
@@ -84,7 +86,7 @@
         <div>
             <h4 class="heading">County</h4>
             <ul>
-                <li><a href="https://www.buckinghamshirebowls.co.uk/">Buckinghamshire B.A.</a></li>
+                <li><a href="https://www.buckinghamshirebowls.com/">Buckinghamshire B.A.</a></li>
             </ul>
         </div>
         <div>
@@ -95,6 +97,12 @@
 </div> 
 </div>
     <script src="https://apis.google.com/js/api.js"></script>
+
+    <script async defer src="https://apis.google.com/js/api.js"
+        onload='this.onload=function(){};handleClientLoad()'
+        onreadystatechange="if(this.readyState === 'complete') this.onload">
+    </script>
+
     <script src="{{ url_for('static', filename= 'JS/script.js') }}"></script>
 </body>
 </html>

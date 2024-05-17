@@ -145,6 +145,12 @@ input[type=button]:hover{
     margin: 0% 15%;
 }
 
+section{
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 22%;
+}
+
 .flex-item h2{
     text-align: center;
 }
