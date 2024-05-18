@@ -7,12 +7,11 @@ fetch("GET https://youtube.googleapis.com/youtube/v3/search?part=snippet&channel
   console.log(data.json())
 })
 
-// Client ID: 106580122896-3vbu5368cqa1mtn13pb1lmsohkjbuq2f.apps.googleusercontent.com
-// Client Secret: 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
+
 
 
 //API Call YouTube
-const CLIENT_ID = "106580122896-3vbu5368cqa1mtn13pb1lmsohkjbuq2f.apps.googleusercontent.com";
+const CLIENT_ID = "?";
 const DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest"];
 const SCOPES = 'https://www.googleapis.com/auth/youtube.readonly';
 
