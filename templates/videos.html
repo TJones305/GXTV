@@ -1,47 +1,31 @@
-{% extends index.html %}
+{% extends 'index.html' %}
 {% block content %}
 
- <!--
-    <main class="flex">
-            <!-- Loads latest videos total of 8
-            <div class="flex-item">
-                <h2>TITLE</h2>
-                <img src="{{ url_for('static', filename= 'media/GXTV.png') }}" alt="GXTV logo">
-            </div>
 
-            <div class="flex-item">
-                <h2>TITLE</h2>
-                <img src="{{ url_for('static', filename= 'media/GXTV.png') }}" alt="GXTV logo">
-            </div>
-
-            <div class="flex-item">
-                <h2>TITLE</h2>
-                <img src="{{ url_for('static', filename= 'media/GXTV.png') }}" alt="GXTV logo">
-            </div>
-
-            <div class="flex-item">
-                <h2>TITLE</h2>
-                <img src="{{ url_for('static', filename= 'media/GXTV.png') }}" alt="GXTV logo">
-            </div>
-            <div class="flex-item">
-                <h2>TITLE</h2>
-                <img src="{{ url_for('static', filename= 'media/GXTV.png') }}" alt="GXTV logo">
-            </div>
-
-            <div class="flex-item">
-                <h2>TITLE</h2>
-                <img src="{{ url_for('static', filename= 'media/GXTV.png') }}" alt="GXTV logo">
-            </div>
-
-            <div class="flex-item">
-                <h2>TITLE</h2>
-                <img src="{{ url_for('static', filename= 'media/GXTV.png') }}" alt="GXTV logo">
-            </div>
-
-            <div class="flex-item">
-                <h2>TITLE</h2>
-                <img src="{{ url_for('static', filename= 'media/GXTV.png') }}" alt="GXTV logo">
-            </div>
+    <main class="vid-flex">
+        <div class="vid-item">
+            <h3>GXTV Introduction Launch</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oVEq0GHnEes?si=m7j9RQQKQ0jkFBqw" title="YouTube video player" frameborder="0" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen></iframe>
+            <details>
+                A warm welcome to all as we introduce GXTV and what we aim to do with this channel going forward.
+            </details>
+        </div>
+        <div class="vid-item">
+            <h3>Pre-Season Basics</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gBbyqcpA5zA?si=RNvaTy446iOe2jeD" title="YouTube video player" frameborder="0" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen></iframe>
+            <details>Pre-season basics</details>
+        </div>
+        <div class="vid-item">
+            <h3>Season Open</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VZQP_CgrAc8?si=iTGQ5VXBws1Zdpu7" title="YouTube video player" frameborder="0" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen></iframe>
+            <details>The Outdoor 2024 season is here!! Good Luck to everyone and hope you have a successful summer!</details>
+        </div>
     </main>
 
 

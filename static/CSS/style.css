@@ -290,6 +290,32 @@ margin-left: 37%;
     margin-left: 30%;
 }
 
+
+/* ----- Video.html ---*/
+
+.vid-flex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 1% 0%;
+}
+
+.vid-item{
+    background-color: deepskyblue;
+    margin:1% 5% 5% 5%;
+    width:560px;
+    height: 350px;
+    border-radius: 5%;;
+}
+
+details{
+    color: rgb(227, 227, 226);   
+}
+
+.vid-item>h3{
+    text-align: center;
+}
+
 /* ---- Media Queries styling ---*/
 /* ---- Small Screens and Laptops ---*/
 @media(min-width:768px) and (max-width:1024px) {

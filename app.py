@@ -7,6 +7,10 @@ app=Flask(__name__)
 def index():
   return render_template("index.html")
 
+@app.route("/videos")
+def videos():
+  return render_template("videos.html")
+
 
 @app.errorhandler(404)
 def page_not_found(e):
